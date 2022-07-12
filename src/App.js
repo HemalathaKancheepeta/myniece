@@ -9,7 +9,7 @@ import background from './assests/images/baby-background.jpg'
 function App() {
   const myStyle={
     backgroundImage: `url(${background})`,
-    'min-height': '100px'
+    'min-height': '1000px'
   }
   return (
     <div className="App" style={myStyle}>
