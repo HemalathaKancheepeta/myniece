@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Header } from './components/Header';
+import {Footer} from './components/Footer';
+import Menu from './Menu/Menu';
+import background from './assests/images/baby-background.jpg'
+
 
 function App() {
+  const myStyle={
+    backgroundImage: `url(${background})`,
+    'min-height': '920px'
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" style={myStyle}>
+      <Header/>
+      <Menu/>
+      <Footer/>
+
+        </div>
   );
 }
 

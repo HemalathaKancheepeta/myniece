@@ -1,0 +1,48 @@
+.menu{
+    margin: 0;
+list-style-type: none;
+text-align: center;
+text-decoration: none;
+font-style: oblique;
+line-height: 40px;
+}
+.menu > li a{
+    color:blue;
+    text-decoration:none;
+}
+.menu > li{
+    display: inline;
+   
+margin-right: 25px;
+letter-spacing: 2px;
+
+cursor: pointer;
+}
+.menu-active{
+    color:darkmagenta;
+    font-size: 25px;
+    font-weight: bold;
+}
+.mobile-menu-btn{
+    position: absolute;
+    z-index:9;
+    color:black;
+    background-color: white;
+    right: 10px;
+    top: 10px;
+   
+}
+.mobile-menu{
+    width: 140px;
+    background-color: cornsilk;
+    z-index: 9;;
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    transition: left 1s;
+    text-align: left !important;
+}
+.mobile-menu > li{
+    display: block !important;
+}
+
